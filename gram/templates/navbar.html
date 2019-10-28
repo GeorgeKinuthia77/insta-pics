@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
+<body>
+    <nav class="navbar bg-white sticky-top">
+        <div class="container-fluid">
+            <div class="navbar-header"> 
+                <a  class="navbar-brand" style="color: rgb(31, 30, 30);" class="navbar-brand" href="{% url 'welcome' %}"><ul>
+                    <i class="fa fa-instagram" aria-hidden="true" style="font-size:28px;"></i>
+                </ul></a> 
+                <a style="color: rgb(27, 27, 27);font-family: 'Leckerli One', cursive;font-size:28px;" class="navbar-brand" href="{% url 'welcome' %}" >| Instagram</a>
+            </div>
+            <div class=" col-md-4 col-md-4 navbar-right">
+                <input class="form-control" type="text" placeholder="Search" name="user_name" type="submit" style="background-color:rgb(248, 246, 246); ">
+            </div>
+            
+            <div class="col-md-2 col-md-3">
+           
+                <ul>
+                    <a href="{% url 'welcome' %}"><i class="fa fa-compass" aria-hidden="true" style="font-size:28px;color: rgb(31, 30, 30);"></i></a>
+
+                    <a href="{% url 'welcome' %}"><i class="fa fa-heart-o" aria-hidden="true" style="font-size:28px;color: rgb(31, 30, 30);"></i></a>
+
+                    
+                    <a href="#" class="dropdown dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user-o" aria-hidden="true" style="font-size:28px;color: rgb(31, 30, 30);"></i>
+                                <span class="caret"></span>
+                            </a>
+                        <ul class="dropdown-menu"  role="menu" style="float: right;">
+                            <li>
+                                <a href="{%url 'profile'%}" style="font-size:16px;color: rgb(31, 30, 30);">Profile</a>
+                            </li>
+                            <li>
+                                <a href="{%url 'addPic'%}" style="font-size:16px;color: rgb(31, 30, 30);">upload image</a>
+                            </li>
+                            <li>
+                                <a href="/accounts/password/change" style="font-size:16px;color: rgb(31, 30, 30);">Change Password</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="/logout" style="font-size:16px;color: rgb(31, 30, 30);">Logout</a>
+                            </li>
+                        </ul>
+                    
+                </ul>
+            </div>
+        </div>
+        
+                
+    </nav>
+</body>
+</html>
+

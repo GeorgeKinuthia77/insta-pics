@@ -1,0 +1,40 @@
+{%extends 'everything/base.html'%}
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Source+Serif+Pro&display=swap" rel="stylesheet">
+{%load bootstrap4 %}
+{% block content %}
+<div style="background-color: rgb(248, 246, 246);">
+    <div class="well">
+        <h1 style="font-family:'Leckerli One', cursive;" class="text-center">Instagram</h1>
+        <br>
+        <a href="{%url 'addPic'%}"><i class="fa fa-upload" aria-hidden="true" style="font-size:36px;color: rgb(31, 30, 30);margin-left: 630px;"></i></a>
+    </div>
+    <br>
+    <div class="container">
+        {% for pict in image_pic %}
+        <div class="card" style="width: 50%;margin-left: 25%;">
+            <br>
+            <span style="font-family: cursive;"><img src="{{pict.profiles.pro_pic.url}}" style="height: 50px; width:50px;" class="rounded-circle profile-img">      {{pict.user_name}}</span>
+            <br>
+            <img src="{{pict.pic.url}}" alt="images" style="height: 350px;">
+            <div class="card-body">
+                <p><i class="fa fa-heart-o" style="color: rgb(165, 2, 2);font-size:36px;"></i>
+                    <i class="fa fa-comment-o" style="font-size:36px;"></i></p>
+                <p style="font-family: cursive;">Caption: {{pict.description}}</p>
+                <hr>
+    
+                {% for comments in comment %}
+                <p>{{comments.comment}}</p>
+                {% endfor %}
+    
+                <a href="#">comment</a>
+    
+            </div>
+        </div>
+        <br><br>
+        {% endfor %}
+        
+    </div>
+    
+    {% endblock %}
+    
+</div>
