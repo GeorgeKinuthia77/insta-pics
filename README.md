@@ -38,3 +38,14 @@ python3.6 manage.py runserver
 * To edit the code if you will need any dependency you will need to navigate to the virtual environment in order to install them from there to avoid version conflicts
 
 source virtualenv/bin/activate
+
+
+# Known Bugs
+There are no known bugs if any don't hesitate to contact me.
+
+# Technologies Used
+1. Python Version 3.6
+2. Django Framework
+3. Html
+4. Bootstrap
+5. Css
