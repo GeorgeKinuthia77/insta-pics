@@ -29,7 +29,7 @@ if config('MODE')=="dev":
            'HOST': config('DB_HOST'),
            'PORT': '',
        }
-       
+
    }
 # production
 else:
@@ -109,13 +109,13 @@ WSGI_APPLICATION = 'insta.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
+#
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
 #         'NAME': 'instagram',
-#         'USER': 'mwiza',
-#     'PASSWORD':'mwiza',
+#         'USER': 'George',
+#     'PASSWORD':'ptex',
 #     }
 # }
 
