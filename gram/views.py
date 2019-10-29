@@ -1,4 +1,4 @@
-# from django.http import HttpResponse,httpResponseRedirect
+from django.http import HttpResponse,httpResponseRedirect
 from django.shortcuts import render,redirect
 from .models import Image,Profile,Comments,Follower
 from .email import send_welcome_email
@@ -46,7 +46,7 @@ def new_pic(request):
 def getProfile(request,users=None):
     user = request.user
     image_pic = Image.objects.filter(user_name=user)
-    
+
     return render(request,'everything/profile.html',locals(),{"image_pic":image_pic})
 
 
