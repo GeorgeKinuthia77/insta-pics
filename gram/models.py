@@ -52,7 +52,7 @@ class Image(models.Model):
     profiles = models.ForeignKey(Profile,null=True)
 
     def save_pic(self):
-        self.save()  
+        self.save()
 
     def delete_pic(cls,id):
         pic = cls.objects.get(PrimaryKey=id)
