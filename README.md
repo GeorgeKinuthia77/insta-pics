@@ -49,3 +49,10 @@ There are no known bugs if any don't hesitate to contact me.
 3. Html
 4. Bootstrap
 5. Css
+
+# Support and contact details
+For any questions, troubleshooting or contributions, find me on:
+
+Email: gnjoro077@gmail.com
+
+Contact: 0704282877
